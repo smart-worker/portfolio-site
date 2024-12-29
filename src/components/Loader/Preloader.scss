@@ -1,0 +1,50 @@
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1031;
+  // background-color: #be5103;
+  animation-name: Blur;
+  animation-duration: 1s;
+  background-image: url(../../Assets/loader.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@keyframes Blur {
+  0% {
+    backdrop-filter: blur(10px);
+  }
+  10% {
+    backdrop-filter: blur(9px);
+  }
+  20% {
+    backdrop-filter: blur(8px);
+  }
+  30% {
+    backdrop-filter: blur(7px);
+  }
+  40% {
+    backdrop-filter: blur(6px);
+  }
+  50% {
+    backdrop-filter: blur(5px);
+  }
+  60% {
+    backdrop-filter: blur(4px);
+  }
+  70% {
+    backdrop-filter: blur(3px);
+  }
+  80% {
+    backdrop-filter: blur(2px);
+  }
+  90% {
+    backdrop-filter: blur(1px);
+  }
+  100% {
+    backdrop-filter: blur(0px);
+  }
+}
