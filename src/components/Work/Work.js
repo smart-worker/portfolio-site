@@ -1,6 +1,12 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Techstack from "./Techstack";
+import {
+  STUNNER_LOR,
+  HACKNPITCH_LOR,
+  CREDANIC_LOR,
+  TECHTRIX_LOR,
+} from "../../constants";
 
 import "./Work.scss";
 
@@ -11,7 +17,11 @@ function Work() {
       <section className="work-content-wrapper">
         <h2>Work & Contributions</h2>
         <div className="work-experience-list">
-          <div className="work-item-container">
+          <div
+            className="work-item-container"
+            onClick={() => window.open(STUNNER_LOR)}
+            title="Click to visit link"
+          >
             <h5>Software Development Engineer</h5>
             <h6>Stunner Technologies Pvt. Ltd. - Remote</h6>
             <h6>Feb 2022 - Jul 2024</h6>
@@ -43,7 +53,11 @@ function Work() {
               </li>
             </ul>
           </div>
-          <div className="work-item-container">
+          <div
+            className="work-item-container"
+            onClick={() => window.open(CREDANIC_LOR)}
+            title="Click to visit link"
+          >
             <h5>SDE Intern</h5>
             <h6>Credanic Solutions - Remote</h6>
             <h6>Dec 2021 - Jan 2022</h6>
@@ -70,16 +84,45 @@ function Work() {
               </li>
             </ul>
           </div>
-          <div className="work-item-container">
+          <div
+            className="work-item-container"
+            onClick={() => window.open(TECHTRIX_LOR)}
+            title="Click to visit link"
+          >
             <h5>TECHTRIX 2022</h5>
             <h6>Individual contribution</h6>
             <h6>2022</h6>
             <ul>
-              <li></li>
+              <li>
+                Developed mobile applicaiton for Android using React Native.
+              </li>
+              <li>
+                Implemented user authentication to enhance app functionality.
+              </li>
+              <li>
+                Integrated backend services using REST APIs to enable seamless
+                communication between app and server.
+              </li>
             </ul>
           </div>
-          <div className="work-item-container">
-            <h5>HacknPitch’21 position holder (Team Quasar)</h5>
+          <div
+            className="work-item-container"
+            onClick={() => window.open(HACKNPITCH_LOR)}
+            title="Click to visit link"
+          >
+            <h5>HacknPitch’21 special mention</h5>
+            <h6>Part of Team Quasar</h6>
+            <h6>2021</h6>
+            <ul>
+              <li>
+                Developed responsive web-app using frontend framework like
+                React.js
+              </li>
+              <li>
+                Designed attraction web desings and implemented using styling
+                library like Bootstrap.
+              </li>
+            </ul>
           </div>
         </div>
       </section>

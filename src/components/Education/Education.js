@@ -16,7 +16,7 @@ const academicDetails = [
     degree: "B.Tech in Computer Science and Engineering",
     institution: "RCC Institute Of Information Technology",
     year: "2024",
-    details: "Passed with 9.13 CGPA",
+    details: "Graduated with 9.13 CGPA",
   },
   {
     degree: "Class 12",
