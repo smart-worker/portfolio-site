@@ -60,7 +60,7 @@ function Work() {
           >
             <h5>SDE Intern</h5>
             <h6>Credanic Solutions - Remote</h6>
-            <h6>Dec 2021 - Jan 2022</h6>
+            <h6>Dec 2021 - Feb 2022</h6>
             <ul>
               <li>
                 Assisted in developing responsive web applications using

@@ -8,6 +8,10 @@ const TECHTRIX_LOR =
   "https://drive.google.com/file/d/1sFuObRKD3Qgq4jWzulp_UOGOiZ08f-HD/view";
 const HACKNPITCH_LOR =
   "https://drive.google.com/file/d/1JZSUNoYImdhJPRI1yaedzo9jGP4DRmuc/view";
+const ECOM_FRONT_LINK =
+  "https://github.com/smart-worker/ecommerce-compare-frontend";
+const ECOM_BACK_LINK =
+  "https://github.com/smart-worker/Ecommerce-compare-backend";
 
 export {
   LINKEDIN_URL,
@@ -16,4 +20,6 @@ export {
   CREDANIC_LOR,
   TECHTRIX_LOR,
   HACKNPITCH_LOR,
+  ECOM_BACK_LINK,
+  ECOM_FRONT_LINK,
 };

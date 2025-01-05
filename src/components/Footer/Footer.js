@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import { AiFillGithub, AiOutlineHome, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Modal from "../ContactModal.js/Modal";
 
 import { LINKEDIN_URL, GITHUB_URL } from "../../constants";
 
@@ -11,8 +12,11 @@ function Footer({ homeRef = null }) {
   let date = new Date();
   let year = date.getFullYear();
 
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <Container fluid className="footer">
+      <Modal show={showModal} setShow={setShowModal} />
       <section className="content-wrapper">
         <Row className="links-wrapper">
           <p
@@ -23,7 +27,7 @@ function Footer({ homeRef = null }) {
             <AiOutlineHome />
             &nbsp;&nbsp;Home
           </p>
-          <p>
+          <p onClick={() => setShowModal(true)}>
             <AiOutlineMail />
             &nbsp;&nbsp;Contact
           </p>

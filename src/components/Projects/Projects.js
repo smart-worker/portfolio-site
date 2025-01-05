@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
+import { ECOM_BACK_LINK, ECOM_FRONT_LINK } from "../../constants";
 
 import "./Projects.scss";
 
@@ -13,10 +14,11 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              // imgPath={chatify}
-              title="lorem ipsum dolor sit amet"
-              desc="lorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consecteturlorem ipsum dolor sit amet, consectetur"
-              link="https://github.com/soumyajit4419/Chatify"
+              imgPath="../../Assets/ecom.png"
+              title="Ecommerce Comparator"
+              desc="Developed a RESTful API using Flask to integrate data scraping from Amazon and Flipkart using Selenium and BeautifulSoup, enabling efficient retrieval of product details and comparative analysis. Designed an interactive frontend with React.js to display search results and provide real-time statistical comparisons between e-commerce platforms, enhancing user experience with intuitive visualizations."
+              frontendLink={ECOM_FRONT_LINK}
+              backendLink={ECOM_BACK_LINK}
             />
           </Col>
         </Row>

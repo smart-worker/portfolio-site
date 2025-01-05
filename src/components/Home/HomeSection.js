@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-mainv2.svg";
 import Type from "./Typing";
+import Modal from "../ContactModal.js/Modal";
 
 import { ReactComponent as Download } from "../../Assets/download.svg";
 
 function HomeSection() {
+  const [showModal, setShowModal] = useState(false);
+
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/resume.pdf";
@@ -14,11 +17,12 @@ function HomeSection() {
   };
 
   const handleMailClick = () => {
-    window.location.href = "mailto:sarkarsoham07@gmail.com?";
+    setShowModal(!showModal);
   };
 
   return (
     <Container fluid className="home-section" id="home">
+      <Modal show={showModal} setShow={setShowModal} />
       <Row className="content-wrapper">
         <Col md={7} className="text-container">
           <h1 style={{ paddingBottom: 15 }} className="heading">

@@ -1,21 +1,39 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
-function ProjectCards({ title = "", desc = "", link = "", img = "" }) {
+function ProjectCards({
+  title = "",
+  desc = "",
+  frontendLink = "",
+  backendLink = "",
+  img = "",
+}) {
   return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={img} alt="card-img" />
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>{desc}</Card.Text>
-        <Button variant="primary" href={link} target="_blank">
-          <BsGithub /> &nbsp; GitHub
-        </Button>
-      </Card.Body>
-    </Card>
+    <div className="project-card-view">
+      <img
+        src={require("../../Assets/ecom.png")}
+        alt="card-img"
+        className="project-card-img"
+      />
+      <div>
+        <h3>{title}</h3>
+        <p>{desc}</p>
+        <div>
+          <Button variant="primary" href={frontendLink} target="_blank">
+            <BsGithub /> &nbsp; Frontend
+          </Button>
+          <Button
+            variant="primary"
+            href={backendLink}
+            style={{ marginLeft: 20 }}
+            target="_blank"
+          >
+            <BsGithub /> &nbsp; Backend
+          </Button>
+        </div>
+      </div>
+    </div>
   );
 }
 export default ProjectCards;
