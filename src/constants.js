@@ -12,6 +12,7 @@ const ECOM_FRONT_LINK =
   "https://github.com/smart-worker/ecommerce-compare-frontend";
 const ECOM_BACK_LINK =
   "https://github.com/smart-worker/Ecommerce-compare-backend";
+const CONTACT_API_URL = "https://contact-me-yul8.onrender.com/contact";
 
 export {
   LINKEDIN_URL,
@@ -22,4 +23,5 @@ export {
   HACKNPITCH_LOR,
   ECOM_BACK_LINK,
   ECOM_FRONT_LINK,
+  CONTACT_API_URL,
 };

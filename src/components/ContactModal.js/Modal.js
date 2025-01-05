@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { CONTACT_API_URL } from "../../constants";
 
 import "./Modal.scss";
 
@@ -15,6 +16,34 @@ function Modal({ show = false, setShow }) {
       document.body.overflow = "auto";
     };
   }, [show]);
+
+  const handleSendMsg = async () => {
+    const payload = {
+      name,
+      email,
+      message: msg,
+    };
+
+    try {
+      const res = await fetch(CONTACT_API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (res.status === 201) {
+        alert("Message delivered successfully !");
+      } else {
+        alert("Failed to send message. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    } finally {
+      setShow(false);
+    }
+  };
 
   return (
     <div
@@ -45,10 +74,14 @@ function Modal({ show = false, setShow }) {
             name="details-msg"
             id="details-msg"
             placeholder="Why do you want to contant me . . ."
+            value={msg}
+            onChange={(e) => setMsg(e.target.value)}
           />
         </div>
         <div className="buttons-container">
-          <div className="send-btn">Send</div>
+          <div className="send-btn" onClick={handleSendMsg}>
+            Send
+          </div>
           <div className="discard-btn" onClick={() => setShow(false)}>
             Discard
           </div>
