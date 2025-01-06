@@ -11,7 +11,7 @@ function HomeSection() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
+    link.href = "/KGP_CV.pdf";
     link.download = "soham_sarkar.pdf";
     link.click();
   };
