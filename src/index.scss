@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
+:root {
+  --bg-color: linear-gradient(120deg, #b37e2e, #be5103 0%);
+}
+
+[data-theme="dark"] {
+  --bg-color: linear-gradient(120deg, #121212, #1d1402 0%);
+}
+
 * {
   cursor: none;
 }
@@ -13,7 +21,9 @@ body {
   font-family: "Outfit", serif;
   font-optical-sizing: auto;
   font-weight: 600;
-  background-image: linear-gradient(120deg, #b37e2e, #be5103 0%);
+
+  background-image: var(--bg-color);
+  transition: background-image 1s ease;
 
   &::-webkit-scrollbar {
     width: 6px;

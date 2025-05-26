@@ -42,6 +42,19 @@
   min-height: calc(100dvh - 100px);
   display: flex;
 
+  .theme_button {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 99px;
+    background-color: transparent;
+    border: 2px solid #ffd63a;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #ffd63a;
+  }
+
   .content-wrapper {
     width: 100%;
     margin-top: auto;
