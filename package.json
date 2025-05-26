@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "ajv": "^8.17.1",
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.15.0",
     "react": "^19.0.0",
