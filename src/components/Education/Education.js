@@ -10,7 +10,7 @@ const academicDetails = [
     degree: "M.Tech in Computer Science",
     institution: "IIT Kharagpur",
     year: "2024 - present",
-    details: "Passed 1st semester with 7.95 SGPA",
+    details: "Completed 1st year with 8.41 CGPA",
   },
   {
     degree: "B.Tech in Computer Science and Engineering",
