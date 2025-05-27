@@ -25,7 +25,7 @@ function HomeSection() {
 
   return (
     <Container fluid className="home-section" id="home">
-      <div className="theme_button" onClick={toggleTheme}>
+      <div className="theme_button" onClick={toggleTheme} title="Change theme">
         {theme === "light" ? "🌙" : "☀️"}
       </div>
       <Modal show={showModal} setShow={setShowModal} />

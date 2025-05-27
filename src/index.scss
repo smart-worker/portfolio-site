@@ -2,10 +2,12 @@
 
 :root {
   --bg-color: linear-gradient(120deg, #b37e2e, #be5103 0%);
+  --text-color: #be5103;
 }
 
 [data-theme="dark"] {
   --bg-color: linear-gradient(120deg, #121212, #1d1402 0%);
+  --text-color: #1d1402;
 }
 
 * {
