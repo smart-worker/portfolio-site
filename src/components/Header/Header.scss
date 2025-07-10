@@ -1,5 +1,23 @@
 @import "../../index.scss";
 
+.theme_button {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  width: 30px;
+  height: 30px;
+  border-radius: 99px;
+  background-image: var(--bg-color);
+  z-index: 100;
+  border: 2px solid #ffd63a;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 #ffd63a;
+
+  @media screen and (max-width: 550px) {
+    right: 20px;
+  }
+}
+
 .sticky {
   background-color: transparent;
   transition: all 0.3s ease-out 0s;

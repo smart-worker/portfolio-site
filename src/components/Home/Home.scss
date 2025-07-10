@@ -44,25 +44,6 @@
   min-height: calc(100dvh - 100px);
   display: flex;
 
-  .theme_button {
-    position: fixed;
-    bottom: 30px;
-    right: 40px;
-    width: 30px;
-    height: 30px;
-    border-radius: 99px;
-    background-image: var(--bg-color);
-    z-index: 100;
-    border: 2px solid #ffd63a;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 #ffd63a;
-
-    @media screen and (max-width: 550px) {
-      bottom: 20px;
-      right: 20px;
-    }
-  }
-
   .content-wrapper {
     width: 100%;
     margin-top: auto;

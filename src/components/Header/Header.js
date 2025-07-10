@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -9,6 +9,7 @@ import {
   AiOutlineLaptop,
   AiOutlineBook,
 } from "react-icons/ai";
+import { ThemeContext } from "../../context/ThemeContext";
 
 import "./Header.scss";
 
@@ -20,6 +21,7 @@ function NavBar({
 }) {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -38,6 +40,9 @@ function NavBar({
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
+      <div className="theme_button" onClick={toggleTheme} title="Change theme">
+        {theme === "light" ? "🌙" : "☀️"}
+      </div>
       <Container>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
