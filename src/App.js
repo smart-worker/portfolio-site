@@ -10,6 +10,7 @@ import Home from "./components/Home/LandingPage";
 import Header from "./components/Header/Header";
 import Preloader from "./components/Loader/Preloader";
 import Cursor from "./components/Cursor/Cursor";
+import Chatbot from "./components/Chatbot/index";
 
 const App = () => {
   const homeRef = useRef(null);
@@ -30,6 +31,7 @@ const App = () => {
     <Router>
       <Preloader load={load} />
       <div className="App">
+        <Chatbot />
         <Cursor />
         <Header
           homeRef={homeRef}

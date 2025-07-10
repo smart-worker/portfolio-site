@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
-import { ECOM_BACK_LINK, ECOM_FRONT_LINK } from "../../constants";
+// import { ECOM_BACK_LINK, ECOM_FRONT_LINK } from "../../constants";
 
 import "./Projects.scss";
 
