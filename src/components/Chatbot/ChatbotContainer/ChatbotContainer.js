@@ -36,7 +36,7 @@ const ChatbotContainer = () => {
 
     try {
       // Call your custom API
-      const response = await fetch("YOUR_API_ENDPOINT", {
+      const response = await fetch(process.env.REACT_APP_CHATBOT_ENDPPOINT, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
