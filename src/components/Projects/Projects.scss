@@ -2,6 +2,31 @@
   position: relative !important;
   padding-top: 120px !important;
   padding-bottom: 80px !important;
+
+  .custom-row {
+    display: flex; // put cards in a row
+    flex-wrap: nowrap; // prevent wrapping
+    overflow-x: auto; // enable horizontal scroll
+    overflow-y: hidden; // hide vertical scroll if any
+    gap: 1rem; // spacing between cards (optional)
+    padding: 0.5rem 0 2rem 0; // extra padding for scroll bar clearance
+
+    // style scrollbar (optional)
+    &::-webkit-scrollbar {
+      height: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #666;
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #222;
+    }
+  }
+
+  .custom-row > .col {
+    flex: 0 0 auto; // prevents shrinking and keeps card width fixed
+  }
 }
 
 .project-section-bg {
@@ -32,6 +57,13 @@
   p {
     font-size: 18px;
     text-align: justify;
+    height: 300px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &:hover {
