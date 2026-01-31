@@ -26,7 +26,7 @@ function HomeSection() {
       <Row className="content-wrapper">
         <Col md={7} className="text-container">
           <h1 style={{ paddingBottom: 15 }} className="heading">
-            Hello World!{" "}
+            Hello Earth!{" "}
             <span className="wave" role="img" aria-labelledby="wave">
               👋🏻
             </span>
